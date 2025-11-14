@@ -1,6 +1,6 @@
 // ===== CONFIG =====
-const useMockData = false; // set to true if you want built-in fake data
-const BACKEND_BASE_URL = 'http://localhost:3000'; 
+const useMockData = false;
+const BACKEND_BASE_URL = 'https://warranty-api-bxbw.onrender.com';; 
 // When IT deploys the backend, change this to e.g.
 // const BACKEND_BASE_URL = 'https://warranty.sundancenetworks.com';
 

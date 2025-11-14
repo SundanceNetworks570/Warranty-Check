@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 24px 28px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  max-width: 1200px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.controls-left {
+  font-size: 12px;
+  color: #666;
+}
+
+.controls-right {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: #007db8;
+  color: #fff;
+  min-width: 120px;
+  height: 34px;
+}
+
+button.secondary {
+  background: #e0e0e0;
+  color: #333;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+thead {
+  background: #f0f0f0;
+}
+
+th, td {
+  padding: 8px 6px;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #555;
+}
+
+select, input[type="text"] {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.cell-text {
+  font-size: 13px;
+}
+
+.muted {
+  color: #888;
+}
+
+.error {
+  margin-top: 6px;
+  color: #b00020;
+  font-size: 12px;
+  min-height: 16px;
+}
+
+.loading {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #777;
+  display: none;
+}
+
+.row-error {
+  font-size: 11px;
+  color: #b00020;
+  margin-top: 2px;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #555;
+  text-align: center;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #b00020;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+}
+
+.remove-btn:hover {
+  color: #ff4444;
+}
+
+.row-highlight-error {
+  background-color: #fff3f3;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    font-size: 12px;
+  }
+  button {
+    min-width: 100px;
+  }
+}

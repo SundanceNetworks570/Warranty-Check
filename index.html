@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Computer Warranty Grid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Computer Warranty Grid</h1>
+    <div class="subtitle">
+      Add multiple devices, paste in Service Tags/Serials, and look up make/model/warranty in one place.
+    </div>
+
+    <div class="controls-row">
+      <div class="controls-left">
+        Use <strong>“Add Device”</strong> to create more rows. You can paste tags straight into the Service Tag column.
+      </div>
+      <div class="controls-right">
+        <button id="addRowBtn" class="secondary">Add Device</button>
+        <button id="lookupAllBtn">Lookup All</button>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 16%;">Manufacturer</th>
+          <th style="width: 20%;">Service Tag / Serial</th>
+          <th style="width: 18%;">Make</th>
+          <th style="width: 22%;">Model</th>
+          <th style="width: 20%;">Warranty</th>
+          <th style="width: 4%; text-align: center;">✕</th>
+        </tr>
+      </thead>
+      <tbody id="devicesBody">
+        <!-- rows injected by app.js -->
+      </tbody>
+    </table>
+
+    <div class="loading" id="loadingMsg">Looking up warranty details…</div>
+    <div class="error" id="errorMsg"></div>
+
+    <div class="note">
+      This page can call a backend API for real results.<br>
+      Until that’s configured, you can enable mock data or have IT wire the backend in <code>backend/server.js</code>.
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
